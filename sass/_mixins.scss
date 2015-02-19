@@ -1,0 +1,10 @@
+@mixin animation($duration) {
+	-webkit-animation: spin $duration $animation-timing infinite;
+	animation: spin $duration $animation-timing infinite;
+}
+
+@mixin border($color) {
+	@each $side in $sides {
+		border-#{$side}-color: $color;
+	}
+}

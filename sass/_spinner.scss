@@ -1,0 +1,43 @@
+div.preloader-wrapper {
+	position: relative;
+}
+
+div.preloader,
+div.preloader:before,
+div.preloader:after {
+	border-radius: 50%;
+	border: #{$border-width} solid transparent;
+	box-sizing: border-box;
+}
+
+div.preloader {
+	@include border($color1);
+	width: $spinner-width;
+	height: $spinner-width;
+	@include animation($duration1);
+}
+
+div.preloader:before {
+	@include border($color2);
+	width: $spinner-width - $spinner-distance;
+	height: $spinner-width - $spinner-distance;
+	content: "";
+	display: block;
+	position: absolute;
+	top: ($spinner-distance/2) - $border-width;
+	left: ($spinner-distance/2) - $border-width;
+	@include animation($duration2);
+}
+/*
+div.preloader:after {
+	@include border($color3);
+	width: $spinner-width - (2 * $spinner-distance);
+	height: $spinner-width - (2 * $spinner-distance);
+	content: "";
+	display: block;
+	position: absolute;
+	top: $spinner-distance - $border-width;
+	left: $spinner-distance - $border-width;
+	@include animation($duration3);
+}
+*/

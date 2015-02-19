@@ -1,0 +1,64 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+div.preloader-wrapper {
+  position: relative; }
+
+div.preloader,
+div.preloader:before,
+div.preloader:after {
+  border-radius: 50%;
+  border: 2px solid transparent;
+  box-sizing: border-box; }
+
+div.preloader {
+  border-top-color: #FF0000;
+  border-right-color: #FF0000;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite; }
+
+div.preloader:before {
+  border-top-color: #0000FF;
+  border-right-color: #0000FF;
+  width: 40px;
+  height: 40px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+/*
+div.preloader:after {
+	@include border($color3);
+	width: $spinner-width - (2 * $spinner-distance);
+	height: $spinner-width - (2 * $spinner-distance);
+	content: "";
+	display: block;
+	position: absolute;
+	top: $spinner-distance - $border-width;
+	left: $spinner-distance - $border-width;
+	@include animation($duration3);
+}
+*/
+
+/*# sourceMappingURL=main.css.map */
