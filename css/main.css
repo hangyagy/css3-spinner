@@ -27,16 +27,16 @@ div.preloader:after {
   box-sizing: border-box; }
 
 div.preloader {
-  border-top-color: #FF0000;
-  border-right-color: #FF0000;
+  border-top-color: #1976d2;
+  border-right-color: #1976d2;
   width: 50px;
   height: 50px;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite; }
 
 div.preloader:before {
-  border-top-color: #0000FF;
-  border-right-color: #0000FF;
+  border-top-color: #ffb300;
+  border-right-color: #ffb300;
   width: 40px;
   height: 40px;
   content: "";
@@ -47,18 +47,17 @@ div.preloader:before {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite; }
 
-/*
 div.preloader:after {
-	@include border($color3);
-	width: $spinner-width - (2 * $spinner-distance);
-	height: $spinner-width - (2 * $spinner-distance);
-	content: "";
-	display: block;
-	position: absolute;
-	top: $spinner-distance - $border-width;
-	left: $spinner-distance - $border-width;
-	@include animation($duration3);
-}
-*/
+  border-top-color: #A4A4A4;
+  border-right-color: #A4A4A4;
+  width: 30px;
+  height: 30px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite; }
 
 /*# sourceMappingURL=main.css.map */

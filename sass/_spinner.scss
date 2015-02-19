@@ -28,7 +28,7 @@ div.preloader:before {
 	left: ($spinner-distance/2) - $border-width;
 	@include animation($duration2);
 }
-/*
+
 div.preloader:after {
 	@include border($color3);
 	width: $spinner-width - (2 * $spinner-distance);
@@ -40,4 +40,3 @@ div.preloader:after {
 	left: $spinner-distance - $border-width;
 	@include animation($duration3);
 }
-*/
